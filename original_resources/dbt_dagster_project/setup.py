@@ -4,16 +4,12 @@ setup(
     name="dbt_dagster_project",
     version="0.0.1",
     packages=find_packages(),
-    package_data={
-        "dbt_dagster_project": [
-            "dbt-project/**/*",
-        ],
-    },
     install_requires=[
         "dagster",
         "dagster-cloud",
         "dagster-dbt",
-        "dbt-snowflake<1.9",
+        "dbt-core>=1.4.0",
+        "dbt-snowflake",
     ],
     extras_require={
         "dev": [

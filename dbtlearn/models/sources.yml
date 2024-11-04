@@ -6,10 +6,13 @@ sources:
         tables:
             -   name: listings
                 identifier: raw_listings
+                description: Raw dump of Airbnb listings in Berlin taken from Inside Airbnb site
             -   name: hosts
                 identifier: raw_hosts
+                description: Raw dump of Airbnb hosts in Berlin taken from Inside Airbnb site
             -   name: reviews
                 identifier: raw_reviews
+                description: Raw dump of Airbnb reviews in Berlin taken from Inside Airbnb site
                 loaded_at_field: date
                 freshness:
                     warn_after:
